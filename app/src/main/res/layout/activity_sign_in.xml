@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbackground"
+
+    tools:context=".SignIn">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foodies"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            />
+
+        <EditText
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:textColor="@android:color/holo_blue_bright"
+        android:id="@+id/edtPhone"
+        android:hint="Phone Number"
+        android:text="01845"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   app:passwordToggleTint="@android:color/holo_blue_bright"
+    app:passwordToggleEnabled="true"
+    >
+    <EditText
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:text="1234"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:textStyle="bold|italic"
+
+                android:textColor="@android:color/holo_blue_bright"
+                android:id="@+id/ckbRemember"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Remember me"
+                style="@style/Material.Drawable.CheckBox"
+
+
+                />
+            <TextView
+                android:textStyle="bold|italic"
+
+                android:id="@+id/txtForgotPwd"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="Forgot Password?"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+        
+
+    </LinearLayout>
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/btnSINGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+android:background="@drawable/custom_button"
+
+        android:text="signin"
+        />
+
+</RelativeLayout>

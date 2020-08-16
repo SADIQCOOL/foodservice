@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbackground"
+    tools:context=".SignUp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foodies"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            />
+
+        <EditText
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:id="@+id/edtPhone"
+            android:hint="Phone Number"
+            android:text="01845"
+            android:textColor="@android:color/holo_blue_bright"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:id="@+id/edtName"
+            android:textColor="@android:color/holo_blue_bright"
+            android:hint="Name"
+            android:text="SADIQ"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleTint="@android:color/holo_blue_bright"
+            app:passwordToggleEnabled="true"
+
+            >
+
+
+            <EditText
+                android:textStyle="bold|italic"
+                android:textSize="25dp"
+                android:id="@+id/edtPassword"
+                android:textColor="@android:color/holo_blue_bright"
+                android:hint="Password"
+                android:text="1234"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:id="@+id/edtSecureCode"
+            android:hint="Secure Code"
+            android:text="1234"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/btnSINGUP"
+        android:text="signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
